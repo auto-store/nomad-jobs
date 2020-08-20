@@ -7,13 +7,13 @@ job "mysql-server" {
   }
 
   region "west" {
-    count       = 2
+    count       = 1
     datacenters = ["west-1"]
   }
 
   region "east" {
     count       = 1
-    datacenters = ["east-1", "east-2"]
+    datacenters = ["east-1"]
   }
 
 }
